@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedasdos localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+
+    <!--Forma simples de por video, porem nao pega em alguns navegadores-->
+
+    <video src="midia/Meuvideo.m4v.m4v" width="300" height="500" poster="imagens/thumbnail.jpg" controls></video>
+
+
+    <h1>------------------------</h1>
+
+    
+    <!--Forma mais chata de por videos para todos navegadores-->
+
+    <!--Width= Largura // Height= Altura -->
+
+    <!--Poster= Thumbnail-->
+
+    <video controls width="300" height="500" poster="imagens/thumbnail.jpg">
+
+    <source src="midia/meuvideo.mp4.mp4" type="video/mp4">
+
+   <source src="midia/Meuvideo.m4v.m4v" type="video/m4v">
+
+   <source src="midia/Meuvideo.webm.webm" type="video/webm"> 
+  
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    
+</body>
+</html>

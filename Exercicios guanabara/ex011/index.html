@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplsmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 600px )" srcset="imagens/imagem-p300.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m700.jpg" type="image/jpg">
+    
+        <img src="imagens/imagem-g1000.jpg" alt="Imagem flexivel">
+
+    </picture>
+
+<h1>reproduzindo audio</h1>
+<p>vamos aprender a reproduzir audio em HTML5</p>
+
+<audio src="midia/(FREE) Teto x Chefin x Matuê Type Beat _Apollo_ (Prod. Ttheuz1n x White).mp3" controls autoplay> a</audio>
+
+<p>exemplos abaixos</p>
+
+<!-- audio preload="metadata" autoplay toca musica de fundo sem controle--> 
+
+<!-- controls add um play no site para parar a musica-->
+
+    <audio preload="metadata" controls autoplay>
+
+        <source src="midia/(FREE) Teto x Chefin x Matuê Type Beat _Apollo_ (Prod. Ttheuz1n x White).mp3" type="audio/mpeg">
+
+        <source src="midia/(FREE) Teto x Chefin x Matuê Type Beat _Apollo_ (Prod. Ttheuz1n x White).mp3" type="audio/ogg">
+
+        <source src="midia/(FREE) Teto x Chefin x Matuê Type Beat _Apollo_ (Prod. Ttheuz1n x White).mp3" type="audio/wav">
+        
+    </audio>
+
+    <!-- caso nao toque musica, navegador nao e compativel.-->
+
+    <p>Infelizmente seu navegador nao consegue abrir audio.
+    <a href="midia/(FREE) Teto x Chefin x Matuê Type Beat _Apollo_ (Prod. Ttheuz1n x White).mp3">clique aqui para baixar o arquivo MP3</a></p>
+
+
+    
+</body>
+</html>
